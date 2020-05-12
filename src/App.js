@@ -36,10 +36,10 @@ class App extends Component {
 
   render() {
     console.log(this.state)
-    const friends = this.state.friends.map((friend, index) => {
+    const friends = this.state.friends.map((yeeyee, index) => {
       return <div alt='friend-pic' key={`friend-index-${index}`}>
-        <img src={friend.picture} width="200px" />
-        <span>{friend.name}</span>
+        <img src={yeeyee.picture} width="200px" />
+        <span>{yeeyee.name}</span>
       </div>
     })
     return (
@@ -48,7 +48,7 @@ class App extends Component {
         <input placeholder="add url here..."
           onChange={(e) => this.updatePicture(e.target.value)}
           value={this.state.picture} />
-        <span>Friend name</span>
+        <span>Friend Name</span>
         <input placeholder="add name..."
           onChange={(e) => this.updateName(e.target.value)}
           value={this.state.name} />
